@@ -34,3 +34,8 @@
   width: 249px;
   display: block;
 }
+
+@mixin margin-auto{
+  margin-left:auto;
+  margin-right:auto;
+}
