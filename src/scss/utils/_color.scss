@@ -26,8 +26,8 @@ $blue-900: #001433;
 $info-error: #f03f40;
 
 //   주요칼라
-$content-color: $content;
-$primary-color: $primary;
+$content-color: var($content);
+$primary-color: var($primary);
 $secondary-color: var($secondary);
 $new-color: var($accent-orange);
 $error-color: var($info-error);
