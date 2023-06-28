@@ -64,12 +64,12 @@
 
 ## 🖥️ 구현 화면
 
-<img width="600" alt="메인" src="/img/main.jpg">
+![과제 완성 이미지](/img/main.jpg "완성본 이미지")
 
-<img width="600" alt="회원가입" src="/img/register.jpg">
+![과제 완성 이미지](/img/register.jpg "완성본 이미지")
 
-<img width="600" alt="장바구니" src="/img/product.jpg">
+![과제 완성 이미지](/img/product.jpg "완성본 이미지")
 
-<img width="600" alt="상품리스트" src="/img/orderList.jpg">
+![과제 완성 이미지](/img/orderList.jpg "완성본 이미지")
 
-<img width="600" alt="특가" src="/img/special.png">
+![과제 완성 이미지](/img/special.png "완성본 이미지")
