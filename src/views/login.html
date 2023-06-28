@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../style/index.css" />
-    <title>special</title>
+    <title>컬리 - 로그인</title>
   </head>
   <body>
     <div id="header-wrapper">
@@ -74,8 +73,8 @@
 
         <ul class="member">
           <!-- 가상요소 | 추가 필요 -->
-          <li class="member__item"><a href="/">회원가입</a></li>
-          <li class="member__item"><a href="/">로그인</a></li>
+          <li class="member__item"><a href="./register.html">회원가입</a></li>
+          <li class="member__item"><a href="./login.html">로그인</a></li>
           <li class="member__item"><a href="/">고객센터</a></li>
         </ul>
 
@@ -161,7 +160,7 @@
             <ul class="menu">
               <li class="menu__item"><a href="/">신상품</a></li>
               <li class="menu__item">
-                <a href="./views/product-list.html">베스트</a>
+                <a href="./product-list.html">베스트</a>
               </li>
               <li class="menu__item"><a href="/">알뜰쇼핑</a></li>
               <li class="menu__item"><a href="./special.html">특가/혜택</a></li>
@@ -177,127 +176,27 @@
       </header>
     </div>
 
-    <div class="special">
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s1.jpg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s2.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s3.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s4.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s5.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s6.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s7.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s8.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s9.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s10.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s1.jpg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s2.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s3.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s4.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s5.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s6.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s7.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s8.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s9.jpeg" alt="" />
-        </a>
-      </div>
-
-      <div class="special_banner">
-        <a href="#">
-          <img src="../img/main/s10.jpeg" alt="" />
-        </a>
-      </div>
-    </div>
+    <main>
+      <form action="get">
+        <fieldset>
+          <legend>로그인</legend>
+          <div id="login__user-id">
+            <label for="user-id"></label>
+            <input type="text" name="user-id" id="ueser-id" />
+          </div>
+          <div id="login__user-pw">
+            <label for="user-pw"></label>
+            <input type="password" name="user-pw" id="user-pw" />
+          </div>
+          <div id="find__user__wrapper">
+            <span>아이디 찾기</span>
+            <span>비밀번호 찾기</span>
+          </div>
+          <button class="login__btn">로그인</button>
+          <button class="login__btn">회원가입</button>
+        </fieldset>
+      </form>
+    </main>
 
     <footer class="footer">
       <section class="footer-top">
