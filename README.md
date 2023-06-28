@@ -64,12 +64,12 @@
 
 ## 🖥️ 구현 화면
 
-![과제 완성 이미지](/img/main.jpg "완성본 이미지")
+![과제 완성 이미지](/imgs/main.jpg "완성본 이미지")
 
-![과제 완성 이미지](/img/register.jpg "완성본 이미지")
+![과제 완성 이미지](/imgs/register.jpg "완성본 이미지")
 
-![과제 완성 이미지](/img/product.jpg "완성본 이미지")
+![과제 완성 이미지](/imgs/product.jpg "완성본 이미지")
 
-![과제 완성 이미지](/img/orderList.jpg "완성본 이미지")
+![과제 완성 이미지](/imgs/orderList.jpg "완성본 이미지")
 
-![과제 완성 이미지](/img/special.png "완성본 이미지")
+![과제 완성 이미지](/imgs/special.png "완성본 이미지")
