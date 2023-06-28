@@ -1,154 +1,155 @@
 @use "./../base" as *;
 @use "./../utils" as *;
 
-body{
-    color: $content;
-    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+body {
+  color: $content;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
 }
 
-.accent-primary{
-    color: $primary;
+.accent-primary {
+  color: $primary;
 }
 
-.footer{
-    border-top: 1px solid $gray-100;
-    margin-right: auto;
-    margin-left: auto;
+.footer {
+  border-top: 1px solid $gray-100;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.footer-top{
-    width: 1050px;
-    @include margin-auto;
-    padding: 28px 0px 32px 0px;
-    @include flexbox($justify:space-between);
-    border-bottom: 1px solid $gray-100;
+.footer-top {
+  width: 1050px;
+  @include margin-auto;
+  padding: 28px 0px 32px 0px;
+  @include flexbox($justify: space-between);
+  border-bottom: 1px solid $gray-100;
 }
 
-.footer-top__left{
-    width: 477px;
-    @include flexbox($direction:column);
-    gap: 16px;
+.footer-top__left {
+  width: 477px;
+  @include flexbox($direction: column);
+  gap: 16px;
 }
 
-.center-title{
-    font: $heading-large;
+.center-title {
+  text-align: left;
+  font: $heading-large;
 }
 
-.opening__number{
-    font: $heading-xxl;
+.opening__number {
+  font: $heading-xxl;
 }
 
-.quest{
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.quest {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.quest__kakao, .quest__private, .quest__bulk{
-    display: flex;
-    gap: 16px;
-    flex-direction: row wrap;
-    line-height: 160%;
+.quest__kakao,
+.quest__private,
+.quest__bulk {
+  display: flex;
+  gap: 16px;
+  flex-direction: row wrap;
+  line-height: 160%;
 }
 
-.quest__button{
-    width: 140px;
-    height: 40px;
-    border: 1px solid $gray-200;
-    text-align: center;
-    line-height: 40px;
+.quest__button {
+  width: 140px;
+  height: 40px;
+  border: 1px solid $gray-200;
+  text-align: center;
+  line-height: 40px;
 }
 
-.non-member-quest{
-    font: $paragraph-small;
+.non-member-quest {
+  font: $paragraph-small;
 }
 
 /* footer-top__right */
 
-.footer-top__right{
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+.footer-top__right {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 /* paragraph medium 값 주기 */
-.about{
-    width: 486px;
-    @include flexbox($justify:space-between);
-    font-size: 15px;
-    line-height: 160%;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    
+.about {
+  width: 486px;
+  @include flexbox($justify: space-between);
+  font-size: 15px;
+  line-height: 160%;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.info{
-    font-style: normal;
-    font:$paragraph-small;
+.info {
+  font-style: normal;
+  font: $paragraph-small;
 }
 
-.sns{
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+.sns {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-.sns__img{
-    width: 30px;
-    height: 30px;
+.sns__img {
+  width: 30px;
+  height: 30px;
 }
 
-.footer-certification{
-    display: flex;
-    width: 1050px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 24px 0px 32px 0px;
-    justify-content: space-between;
-    /* align-items: flex-start; */
-    
+.footer-certification {
+  display: flex;
+  width: 1050px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 24px 0px 32px 0px;
+  justify-content: space-between;
+  /* align-items: flex-start; */
 }
 
-.footer-rights{
-    background: $gray-50;
-    text-align: center;
-    color: $gray-400;
+.footer-rights {
+  background: $gray-50;
+  text-align: center;
+  color: $gray-400;
 }
 
-.certi-list{
-    display: flex;
-    gap: 8px;
-    align-items: flex-start;
-    background: none;
-    color: inherit;
-    border: none;
-    cursor: pointer;
+.certi-list {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
 }
 
-.certi-text{
-    font-size: 10px;
-    line-height: 160%;
+.certi-text {
+  font-size: 10px;
+  line-height: 160%;
 }
 
-.certi-text__toss{
-    width: 160px;
+.certi-text__toss {
+  width: 160px;
 }
 
-.certi-text__woori{
-    width: 241px;
+.certi-text__woori {
+  width: 241px;
 }
 
-.footer-rights{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 20px 4px 32px 4px;
-    font-size: 10px;
-    color: $gray-400;
-    line-height: 160%;
-    background: $gray-50;
+.footer-rights {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px 4px 32px 4px;
+  font-size: 10px;
+  color: $gray-400;
+  line-height: 160%;
+  background: $gray-50;
 }
