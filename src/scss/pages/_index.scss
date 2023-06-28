@@ -1,1 +1,5 @@
-// index.scss
+@forward "main";
+@forward "special";
+@forward "orderList";
+@forward "product-list";
+@forward "register";

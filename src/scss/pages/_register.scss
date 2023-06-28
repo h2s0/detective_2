@@ -1,0 +1,164 @@
+@use "./../base" as *;
+@use "./../utils" as *;
+@use "./../components" as *;
+
+body {
+  @include margin-auto;
+  color: $content;
+}
+
+.accent-primary {
+  color: $primary;
+}
+
+.accent-new {
+  color: $accent-orange;
+  font-weight: bold;
+}
+
+.register-info {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid $content;
+  border-bottom: 1px solid $content;
+}
+
+.register-title {
+  color: var(--black, $black);
+  font: $label-large;
+  padding: 80px 0px 40px 0px;
+  @include flexbox($direction: column, $items: center);
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
+  gap: 44px;
+}
+
+.guide {
+  @include flexbox($justify: flex-end);
+  // display: flex;
+  // justify-content: flex-end;
+  font: $label-small;
+  margin-right: 455px;
+  margin-bottom: 10px;
+}
+
+.line-wrapper2 {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 20px 0px;
+}
+
+.line-wrapper3 {
+  display: flex;
+  align-items: space-between;
+  gap: 8px;
+  padding: 20px 0px;
+  align-items: center;
+}
+
+.labels {
+  width: 139px;
+  height: 44px;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.input-box {
+  border-radius: 4px;
+  border: 1px solid $gray-300;
+  height: 44px;
+  padding: 0px 20px;
+  width: 333px;
+}
+
+.address__search {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.address__text {
+  font: $label-small;
+  color: #000;
+}
+
+/* 버튼과 텍스트 줄맞춤 */
+.button-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gender-wrapper,
+.add-info-wrapper {
+  width: 333px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.add-info-list {
+  display: flex;
+  gap: 8px;
+}
+
+/* 이용약관동의 */
+.agree {
+  display: flex;
+  gap: 8px;
+  width: 640px;
+  padding: 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.agree-list1 {
+  @include flexbox($direction: column, $justify: center, $items: flex-start);
+  padding: 0px 0px 20px 0px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: flex-start;
+  width: 500px;
+}
+
+.agree-list2 {
+  width: 470px;
+  padding: 12px 0px;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  @include flexbox($justify: space-between, $items: center);
+}
+
+.agree-all__text {
+  font: $label-large;
+}
+
+.agree-all__description {
+  font: $label-small;
+  color: $gray-400;
+  margin-left: 32px;
+}
+
+.see {
+  font: $label-small;
+  margin-right: 4px;
+}
+
+.submit-button-wrapper {
+  padding: 40px 0px;
+  // display: flex;
+  // justify-content: center;
+  margin-bottom: 150px;
+  @include flexbox($justify: center);
+}

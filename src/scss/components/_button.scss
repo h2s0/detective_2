@@ -1,1 +1,136 @@
-// button.scss
+@use "./../utils/mixin" as *;
+@use "./../utils/color" as *;
+
+// orderList CheckBox
+.item__check-box {
+  display: flex;
+  align-items: center;
+}
+
+#check-circle,
+#check-circle2 {
+  display: inline-block;
+  margin-right: 8px;
+  margin-left: 5px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+#check-circle::before,
+#check-circle2::before {
+  content: "";
+  background: url(../../img/orderList/Check.png) no-repeat;
+  background-position: top -8px right -8px;
+  @include order-check-box;
+  opacity: 1;
+}
+
+#check-circle::after,
+#check-circle2::after {
+  content: "";
+  background: url(../../img/orderList/Check.png) no-repeat;
+  background-position: bottom -8px right -8px;
+  @include order-check-box;
+  opacity: 0;
+}
+
+/* 체크박스 토글방식 UI */
+#order-check:checked + #check-circle::after,
+#order-check2:checked + #check-circle2::after {
+  opacity: 1;
+}
+
+#order-check:checked + #check-circle::before,
+#order-check2:checked + #check-circle2::before {
+  opacity: 0;
+}
+
+#order-check,
+#order-check2 {
+  position: absolute;
+  left: -999em;
+  appearance: none;
+}
+
+/* 중복확인, 인증번호 받기 버튼 */
+.form__button{
+  display: flex;
+  width: 143px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--primary, #5F0080);
+  background: transparent;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+/* 주소 검색 버튼 */
+.form__address-button{
+  width: 333px;
+  height: 44px;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--primary, #5F0080);
+  font-weight: 600;
+  line-height: 150%;
+}
+
+/* 성별 선택 버튼 */
+[type="radio"]{
+  appearance: none;
+  background: url(./../../img/Input/Radio.png) no-repeat;
+  background-position: -8px -8px;
+  width: 24px;
+  height: 24px;
+}
+
+[type="radio"]:checked{
+  appearance: none;
+  background: url(./../../img/Input/Radio.png) no-repeat;
+  background-position: -8px -41px;
+  width: 24px;
+  height: 24px;
+}
+
+/* 추가 입력 사항 버튼 */
+.add-button{
+  appearance: none;
+  border: 1px solid #c4c4c4;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+/* 동의 버튼 */
+.agree-button{
+  appearance: none;
+  background: url(./../../img/Input/Check.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  background-position: -8px -8px;
+}
+
+.agree-button:checked{
+  appearance: none;
+  background: url(./../../img/Input/Check.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  background-position: -8px -40px;
+}
+
+/* 가입하기 버튼 */
+.submit-button{
+  width: 340px;
+  height: 54px;
+  border-radius: 4px;
+  border:none;
+  background: var(--primary, #5F0080);
+  color: var(--white, #FFF);
+  font-weight: 600;
+  line-height: 150%;
+}
